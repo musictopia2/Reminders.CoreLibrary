@@ -1,0 +1,12 @@
+﻿global using CommonBasicLibraries.DatabaseHelpers.EntityInterfaces;
+global using System.ComponentModel.DataAnnotations;
+global using CommonBasicLibraries.BasicDateTimeProcesses;
+global using System.Timers;
+global using CommonBasicLibraries.BasicDataSettingsAndProcesses;
+global using Reminders.CoreLibrary.MiscClasses;
+global using CommonBasicLibraries.CollectionClasses;
+global using Reminders.CoreLibrary.Interfaces;
+global using Reminders.CoreLibrary.Models;
+global using CommonBasicLibraries.DatabaseHelpers.Attributes;
+global using Reminders.CoreLibrary.DataAccess;
+global using CommonBasicLibraries.BasicUIProcesses;
