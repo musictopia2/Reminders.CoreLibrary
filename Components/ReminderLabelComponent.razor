@@ -1,0 +1,37 @@
+﻿@if (ChildContent is null)
+{
+    <div>
+        @Section
+    </div>
+    @if (DataContext!.CurrentDateText != "")
+    {
+        <div class="blue">
+        @DataContext.CurrentDateText
+        </div>
+    }
+    <div class="red">
+    @DataContext.NextDayText
+    </div>
+    return;
+}
+<LeftOverLayout>
+    <TopContent>
+        <div>
+            @Section
+        </div>
+        @if (DataContext!.CurrentDateText != "")
+        {
+            <div class="blue">
+                @DataContext.CurrentDateText
+            </div>
+        }
+        <div class="red">
+            @DataContext.NextDayText
+        </div>
+    </TopContent>
+    <MainContent>
+        <div class="font20 maincontent">
+            @ChildContent
+        </div>
+    </MainContent>
+</LeftOverLayout>

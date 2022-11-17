@@ -1,0 +1,16 @@
+﻿div{
+    font-size: 30px;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.maincontent {
+    margin-bottom: 20px;
+    font-weight: bold;
+    overflow: auto;
+    height: 100%;
+    font-size: 20px;
+}

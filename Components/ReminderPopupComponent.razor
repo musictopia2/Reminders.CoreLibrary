@@ -1,0 +1,47 @@
+﻿@if (Media is null)
+{
+    <div>Media is null</div>
+    return;
+}
+@if (Media.ScreenOrientation == EnumScreenOrientation.Portrait)
+{
+    if (Container.SupportsSnooze)
+    {
+        <div>I don't think that portraits is supposed to support snoozing</div>
+        return;
+    }
+    <div class="containerportrait">
+        @Container.Message
+    </div>
+    <div>
+        <button @onclick="CloseAsync" class="close120">
+            Close
+        </button>
+    </div>
+    return;
+}
+@if (Container.SupportsSnooze == false)
+{
+    <div>For landscapes, should allow snoozing.  If wrong, rethink</div>
+    return;
+}
+<GridContainer Columns="6fr 4fr" Rows="1fr auto">
+    <GridItem RowSpan="2">
+        <div class="containerlandscape">
+            @Container.Message
+        </div>
+    </GridItem>
+    <GridItem Column="2">
+        <button @onclick="CloseAsync" class="close80">
+            Close
+        </button>
+    </GridItem>
+    <GridItem Row="2" Column="2">
+        <div class="font20 darkgreen">
+            @GetSnoozeText
+        </div>
+        <div>
+            <NumberComponent OnEnterPressed="SnoozeAsync" FocusFirst="true" @bind-Value="_snoozeTime" Style="width: 100%;" />
+        </div>
+    </GridItem>
+</GridContainer>
