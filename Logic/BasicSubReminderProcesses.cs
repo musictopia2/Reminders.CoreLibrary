@@ -28,6 +28,11 @@ public abstract class BasicSubReminderProcesses : ISubReminder, IAdjustNextDate
     public bool ShowSounds { get; set; } = true;
     public int HowOftenToRepeat { get; set; } = 10;
     public DateTime? NextDate { get; private set; }
+    //public void ForceChangeDate(DateTime date)
+    //{
+    //    NextDate = date;
+    //    MainReminderProcesses.Refresh();
+    //}
     protected bool Snoozing;
     private ReminderModel? _nextReminder;
     private readonly IProcessedReminder? _processed;
@@ -108,6 +113,16 @@ public abstract class BasicSubReminderProcesses : ISubReminder, IAdjustNextDate
         }
         return (false, "", "");
 
+    }
+    public async Task ForceRecalculateDateAsync()
+    {
+        var temp = await GetNextReminderAsync();
+        if (temp is null)
+        {
+            return;
+        }
+        NextDate = temp.NextDate;
+        MainReminderProcesses.Refresh();
     }
     public virtual Task ProcessedReminderAsync()
     {
