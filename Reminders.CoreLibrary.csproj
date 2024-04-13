@@ -10,8 +10,8 @@
 		<SupportedPlatform Include="browser" />
 	</ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AdoNetHelpersGenerators" Version="1.0.11" PrivateAssets="all" />
-    <PackageReference Include="CommonBasicLibraries" Version="8.0.30" />
+    <PackageReference Include="AdoNetHelpersGenerators" Version="1.0.12" PrivateAssets="all" />
+    <PackageReference Include="CommonBasicLibraries" Version="8.0.31" />
 	  <PackageReference Include="BasicBlazorLibrary" Version="8.0.7" />
 	  
   </ItemGroup>
