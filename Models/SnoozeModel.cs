@@ -1,5 +1,5 @@
 ﻿namespace Reminders.CoreLibrary.Models;
-public class SnoozeModel : ISimpleDapperEntity
+public partial class SnoozeModel : ISimpleDatabaseEntity
 {
     public int ID { get; set; }
     public string Key { get; set; } = "";

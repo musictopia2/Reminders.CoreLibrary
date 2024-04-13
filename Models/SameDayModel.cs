@@ -1,5 +1,5 @@
 ﻿namespace Reminders.CoreLibrary.Models;
-public class SameDayModel : ISimpleDapperEntity
+public partial class SameDayModel : ISimpleDatabaseEntity
 {
     public int ID { get; set; }
     public string Title { get; set; } = "";

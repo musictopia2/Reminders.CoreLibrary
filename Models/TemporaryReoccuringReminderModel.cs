@@ -1,5 +1,5 @@
 ﻿namespace Reminders.CoreLibrary.Models;
-public class TemporaryReoccuringReminderModel : ISimpleDapperEntity
+public partial class TemporaryReoccuringReminderModel : ISimpleDatabaseEntity
 {
     public int ID { get; set; }
     public EnumTimeFormat TimeMode { get; set; } = EnumTimeFormat.Hours;

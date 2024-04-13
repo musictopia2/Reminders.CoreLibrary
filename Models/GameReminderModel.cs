@@ -1,5 +1,5 @@
 ﻿namespace Reminders.CoreLibrary.Models;
-public class GameReminderModel : ISimpleDapperEntity
+public partial class GameReminderModel : ISimpleDatabaseEntity
 {
     public int ID { get; set; }
     public int HowMany { get; set; }

@@ -1,5 +1,5 @@
 ﻿namespace Reminders.CoreLibrary.Models;
-public class WeeklyReminderModel : ISimpleDapperEntity
+public partial class WeeklyReminderModel : ISimpleDatabaseEntity
 {
     public int ID { get; set; }
     public DayOfWeek DayOfWeek { get; set; }

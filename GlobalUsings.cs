@@ -16,3 +16,4 @@ global using Microsoft.AspNetCore.Components;
 global using System.Diagnostics.CodeAnalysis;
 global using Reminders.CoreLibrary.Helpers;
 global using Reminders.CoreLibrary.ViewModels;
+global using System.ComponentModel.DataAnnotations.Schema;

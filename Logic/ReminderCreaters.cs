@@ -18,10 +18,9 @@ public static class ReminderCreaters
     {
         appointments.ForEach(a => AppendNewAppointment(reminders, a, currentDate));
     }
-
     public static void AppendNewAppointment(BasicList<ReminderModel> reminders, AppointmentModel appointment, DateTime currentDate)
     {
-        DateTime nextDate = appointment.AppointmentDate!.Value;
+        DateOnly nextDate = appointment.AppointmentDate!.Value;
         DateTime time = DateTime.Parse(appointment.ReminderTime);
         DateTime remindDate = new(nextDate.Year, nextDate.Month, nextDate.Day, time.Hour, time.Minute, 0);
         if (remindDate > currentDate)
