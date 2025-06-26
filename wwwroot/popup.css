@@ -1,19 +1,24 @@
-﻿button {
+﻿.simplebutton {
     background-color: red;
     color: yellow;
 }
-.close120{
+
+.close120 {
     font-size: 120px;
 }
-.close80{
+
+.close80 {
     font-size: 80px;
 }
-.darkgreen{
+
+.darkgreen {
     color: darkgreen;
 }
-.font20{
+
+.font20 {
     font-size: 20px;
 }
+
 .containerportrait {
     font-size: 30px;
     margin: auto;
@@ -21,6 +26,7 @@
     font-weight: bold;
     color: darkgreen;
 }
+
 .containerlandscape {
     margin: auto;
     vertical-align: middle;
