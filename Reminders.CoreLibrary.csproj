@@ -12,9 +12,9 @@
     <SupportedPlatform Include="browser" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AdoNetHelpersGenerators" Version="1.0.13" PrivateAssets="all" />
-    <PackageReference Include="CommonBasicLibraries" Version="10.0.1" />
-    <PackageReference Include="BasicBlazorLibrary" Version="10.0.1" />
+    <PackageReference Include="AdoNetHelpersGenerators" Version="1.0.20" PrivateAssets="all" />
+    <PackageReference Include="CommonBasicLibraries" Version="10.0.13" />
+    <PackageReference Include="BasicBlazorLibrary" Version="10.0.10" />
   </ItemGroup>
   <ItemGroup>
     <Using Remove="System.Threading" />
