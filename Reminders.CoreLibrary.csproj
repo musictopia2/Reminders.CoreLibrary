@@ -6,7 +6,10 @@
     <Nullable>enable</Nullable>
     <Version>9.0.1</Version>
     <FeedType>Public</FeedType>
-    <RunPostBuildAppCondition Condition="'$(Configuration)' == 'Release'">true</RunPostBuildAppCondition>
+	  <StaticWebAssetBasePath>_content/Reminders.CoreLibrary</StaticWebAssetBasePath>
+	  <PackageId>Musictopia2.Reminders.CoreLibrary</PackageId>
+
+	  <RunPostBuildAppCondition Condition="'$(Configuration)' == 'Release'">true</RunPostBuildAppCondition>
   </PropertyGroup>
   <ItemGroup>
     <SupportedPlatform Include="browser" />
